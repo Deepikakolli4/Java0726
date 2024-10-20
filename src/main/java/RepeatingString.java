@@ -56,4 +56,5 @@ public class RepeatingString {
         }
         return true;
     }
+    System.out.println("Added a new Line...!!!");
 }
