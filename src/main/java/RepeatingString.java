@@ -49,8 +49,10 @@ public class RepeatingString {
     private static boolean isRepeating(String input, String substring, int fromIndex) {
         // ref = C
         // CiaoCiao
+        int count = 0;
         for (int i = fromIndex; i <= input.length() - substring.length(); i++) {
             if (!input.startsWith(substring, i)) {
+                count++;
                 return false;
             }
         }
